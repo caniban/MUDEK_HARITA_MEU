@@ -1,0 +1,191 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper, left=1.5cm, right=1.5cm, top=0.5cm, bottom=0.5cm]{geometry}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{parskip}
+\usepackage{setspace}
+\usepackage[normalem]{ulem}
+\usepackage[table]{xcolor}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{booktabs} % For better table formatting
+\usepackage{makecell} % For line breaks in table cells
+
+\titleformat{\section}[block]{\normalfont\large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}[block]{\normalfont\normalsize\bfseries}{\thesubsection}{1em}{}
+
+% New column type for automatic line breaks
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+
+\begin{document}
+
+\begin{minipage}{0.2\textwidth}
+\includegraphics[width=\linewidth]{bölüm_logo.png} % Replace with your actual logo path
+\end{minipage}
+\begin{minipage}{0.8\textwidth}
+\begin{center}
+\textbf{\Large MERSİN ÜNİVERSİTESİ MÜHENDİSLİK FAKÜLTESİ} \\
+\vspace{0.5cm}
+\textbf{\large HARİTA MÜHENDİSLİĞİ BÖLÜMÜ} \\
+\vspace{0.5cm}
+\textbf{\large Coğrafi Bilgi Sistemlerinin Tasarımı ve Uygulanması Dersi İzlencesi}
+\end{center}
+\end{minipage}
+
+\vspace{0.1cm}
+
+\begin{tabularx}{\textwidth}{|l|X|l|l|l|l|}
+\hline
+\textbf{Kodu} & \textbf{Dönemi} & \textbf{Teori} & \textbf{Uygulama} & \textbf{Ulusal Kredisi} & \textbf{AKTS} \\
+\hline
+1606024 & 6. Dönem (Bahar) & 2 & 2 & 3 & 5 \\
+\hline
+\end{tabularx}
+
+\vspace{0.1cm}
+
+\begin{tabularx}{\textwidth}{|l|X|}
+\hline
+\textbf{Ön Koşulu Olan Ders(ler)} & Yok \\
+\hline
+\textbf{Dili} & Türkçe \\
+\hline
+\textbf{Türü} & Zorunlu \\
+\hline
+\textbf{Seviyesi} & Lisans \\
+\hline
+\textbf{Öğretim Elemanı} & Dr. Öğretim Üyesi Lütfiye KUŞAK \\
+\hline
+\textbf{Öğretim Sistemi} & Yüz Yüze \\
+\hline
+\textbf{Staj Durumu} & Yok \\
+\hline
+\end{tabularx}
+
+\section*{Amacı}
+Bu dersin amacı, Coğrafi Bilgi Sistemleri (CBS) alanında proje tabanlı düşünebilen, veriye dayalı karar verme süreçlerini kavrayabilen ve çok kriterli analizler gerçekleştirebilen öğrenciler yetiştirmektir. Öğrencilerin hem teorik hem de uygulamalı düzeyde veri toplama, mekânsal analiz, veri sorgulama, modelleme ve çok kriterli karar verme (AHP) teknikleri konusunda yetkinlik kazanması hedeflenmektedir.
+
+\section*{İçeriği}
+Ders kapsamında; ModelBuilder ile analiz otomasyonu, Network analizi ile erişim değerlendirmeleri, SQL tabanlı sorgulama işlemleri ve Python ile mekânsal analiz senaryolarının geliştirilmesi gibi ileri düzey teknikler ele alınacaktır. Ders sonunda öğrenciler, veri temelli karar destek sistemlerinin geliştirilmesi için kapsamlı bir CBS projesi tasarlayabilecek, AHP tabanlı karar haritaları üretebilecek ve bu haritaları yorumlayarak çözüm önerileri sunabileceklerdir.
+
+\section*{Dersin Öğrenim Çıktıları}
+\begin{tabularx}{\textwidth}{|l|X|}
+\hline
+1 & CBS veri kaynaklarını analiz eder ve mekânsal karar verme süreçlerine uygun veri setleri oluşturur. \\
+\hline
+2 & ModelBuilder, SQL ve network araçları gibi analiz araçlarını kullanarak mekânsal problemleri çözer. \\
+\hline
+3 & Python programlama diliyle basit CBS analiz senaryoları geliştirir ve uygular. \\
+\hline
+4 & AHP yöntemiyle çok kriterli mekânsal analizler gerçekleştirerek karar destek haritaları üretir. \\
+\hline
+\end{tabularx}
+
+\section*{Ölçme ve Değerlendirme Sistemi (ÖDS)}
+\begin{tabularx}{\textwidth}{|l|X|X|}
+\hline
+\textbf{NO}&
+\textbf{Çalışma Türü} & \textbf{Ağırlık} \\
+\hline
+1 & Ara Sınav & 40\% \\
+\hline
+2 & Son Sınav & 60\% \\
+\hline
+\end{tabularx}
+
+\section*{Dersin Öğrenim Çıktıları ve Program Yeterlilikleri ile İlişkileri}
+\begin{tabularx}{\textwidth}{|l|X|X|}
+\hline
+\textbf{Öğrenim Çıktıları} & \textbf{Program Çıktıları} & \textbf{ÖDS} \\
+\hline
+\makecell[l]{1. CBS veri kaynaklarını analiz eder ve mekânsal karar verme süreçlerine \\ uygun veri setleri oluşturur.} & PÇ.5 & 1, 2 \\
+\hline
+\makecell[l]{2. ModelBuilder, SQL ve network araçları gibi analiz araçlarını kullanarak \\ mekânsal problemleri çözer.} & PÇ.4 & 1, 2 \\
+\hline
+\makecell[l]{3. Python programlama diliyle basit CBS analiz senaryoları geliştirir ve \\ uygular.} & PÇ.4 & 1, 2 \\
+\hline
+\makecell[l]{4. AHP yöntemiyle çok kriterli mekânsal analizler gerçekleştirerek karar \\ destek haritaları üretir.} & PÇ.5 & 1, 2 \\
+\hline
+\end{tabularx}
+
+\footnotesize Not: Ölçme ve Değerlendirme Sistemi sütununda belirtilen sayılar, bir üste bulunan Ölçme ve Değerlendirme Sistemi başlıklı tabloda belirtilen çalışmaları işaret etmektedir.
+
+\section*{Haftalık Ayrıntılı Ders İçeriği}
+\begin{tabularx}{\textwidth}{|l|p{0.6\textwidth}|X|}
+\hline
+\textbf{Hafta} & \textbf{Konular} & \textbf{Öğretim Yöntem ve Teknikleri} \\
+\hline
+1 & Ders Tanıtımı ve AHP'ye Giriş: Ders içeriği, değerlendirme kriterleri, AHP nedir, örnek proje fikirleri & Anlatım, Tartışma \\
+\hline
+2 & Literatür Taraması ve Kriter Belirleme: AHP için kriter belirleme, akademik literatür tarama yöntemleri & Anlatım, Tartışma \\
+\hline
+3 & Çalışma Alanı Seçimi ve Haritalama: Arazi seçimi, temel sınır katmanlarının elde edilmesi & Anlatım, Uygulama \\
+\hline
+4 & Veri Edinim Yöntemleri ve Katman Hazırlığı: Açık veri kaynakları, raster-vektör verilerin temini & Anlatım, Uygulama \\
+\hline
+5 & Vektör Verilerle Çalışma: Nokta, çizgi, poligon oluşturma ve öznitelik düzenleme & Anlatım, Uygulama \\
+\hline
+6 & ModelBuilder ile Otomasyon: Çok aşamalı analiz işlemlerinin ModelBuilder ile otomasyonu & Anlatım, Uygulama \\
+\hline
+7 & Attribute ve Mekânsal Sorgulama: SQL tabanlı öznitelik sorguları, mekânsal seçim işlemleri & Uygulama \\
+\hline
+8 & Ara Sınav & Yazılı Sınav \\
+\hline
+9 & Raster Veriye Dönüşüm ve Projeksiyonlar: Raster oluşturma, yeniden projeksiyonlama ve çözünürlük ayarı & Anlatım, Uygulama \\
+\hline
+10 & Raster Sınıflandırma: Raster veri sınıflandırması, yeniden değer atama & Anlatım, Uygulama \\
+\hline
+11 & Network Analizi: Ulaşılabilirlik analizi, en kısa yol, hizmet alanı oluşturma & Anlatım, Uygulama \\
+\hline
+12 & Python ile Mekânsal İşlemler: ArcPy veya GeoPandas ile sorgulama ve analiz örnekleri & Anlatım, Uygulama \\
+\hline
+13 & AHP Ağırlıklarının Uygulanması: AHP matrislerinin oluşturulması, ağırlıklı katman üretimi & Anlatım, Uygulama \\
+\hline
+14 & Karar Destek Haritalarının Üretilmesi: Raster analizlerin AHP sonucu birleştirilmesi, final yüzey haritası & Anlatım, Uygulama \\
+\hline
+15 & Proje Sunumları ve Değerlendirme: Her grubun analizini ve karar yüzeyini sunması, toplu değerlendirme & Tartışma \\
+\hline
+16 & Son Sınav & Yazılı Sınav \\
+\hline
+\end{tabularx}
+
+\section*{Kaynaklar}
+\begin{tabularx}{\textwidth}{|l|X|}
+\hline
+1 & Geographic Information Systems and Science, Paul A. Longley, Michael F. Goodchild, David J. Maguire, David W. Rhind (ISBN: 978-1-119-67157-3) \\
+\hline
+2 & Python Geospatial Development, Erik Westra (ISBN: 978-1-78328-335-4) \\
+\hline
+3 & Multicriteria Decision Analysis in Geographic Information Science, Jacek Malczewski (ISBN: 978-3-540-74756-4) \\
+\hline
+4 & Getting to Know ArcGIS ModelBuilder (ISBN: 978-1-58948-391-0) \\
+\hline
+\end{tabularx}
+
+\section*{AKTS ve İş Yükü Tablosu}
+\begin{tabularx}{\textwidth}{|l|X|X|X|}
+\hline
+\textbf{Etkinlik} & \textbf{Adet} & \textbf{Süre (Saat)} & \textbf{Toplam İş Yükü} \\
+\hline
+Ders Süresi & 14 & 4 & 56 \\
+\hline
+Sınıf Dışı Ders Çalışma Süresi & 14 & 4 & 56 \\
+\hline
+Ara Sınav için Hazırlık & 1 & 4 & 4 \\
+\hline
+Ara Sınav & 1 & 2 & 2 \\
+\hline
+Son Sınav için Hazırlık & 1 & 5 & 5 \\
+\hline
+Son Sınav & 1 & 2 & 2 \\
+\hline
+Toplam & & & 125 \\
+\hline
+\end{tabularx}
+
+\end{document}
